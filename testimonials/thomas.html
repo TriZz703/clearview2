@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clear View Homes, LLC.</title>
+<!-- 	<link href="http://localhost:3000/css/global.css" type="text/css" rel="stylesheet"/> -->
+	<link href="../css/global.css" type="text/css" rel="stylesheet"/>
+	<link href="../css/homepage.css" type="text/css" rel="stylesheet"/>
+	<link href="../css/font-awesome.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<div id="page">
+		<div id="logo">
+			<i class="placeholder">
+				<a href="../">
+					<img src="../images/logo.png"/>
+				</a>
+			</i>
+		</div>
+	<div id="nav">
+		<ul>
+			<li><a href="../">Home</a></li>
+			<li><a href="../about/">About Us</a></li>
+			<li><a href="../gallery/">Gallery</a></li>
+			<li><a href="../contact/">Contact Us</a></li>
+		</ul>
+	</div>
+	<div id="sticky-nav">
+		<ul>
+			<li><a href="../">Home</a></li>
+			<li><a href="../about/">About Us</a></li>
+			<li><a href="../gallery/">Gallery</a></li>
+			<li><a href="../contact/">Contact Us</a></li>
+		</ul>
+	</div>
+	<div id="content">
+		<div class="full text-left">
+			<div class="content-section">
+				<h1>Testimonials</h1>
+				<img style="background-image:url(http://www.vagblog.com/clearview/images/stock/006.jpg);"/>
+				<p>"We are more than happy to recommend JP and Clearview Homes. We love our house! We had great and likely unique experience with JP. We were living overseas and did all the design, selections and construction monitoring over the Internet.</p>
+
+				<p>JP was recommend by friends who have known him for years. JP impressed me immediately. When I called, he invited me to join him at a construction site. He's a builder who wants to show you his work. He's not a salesman with a fancy brochure and "model" home. I'm an engineer by training and walking through the home under construction showed me that he builds great solid houses.</p>
+				
+				<p>JP introduced us to an architect who is used to working over the Internet and we completed the entire process via email and a just a few personal meetings. JP was great about making recommendations on color and design selections and directing us to websites to help us do our research. During construction I had friends and family walk-thru and send us photos. One friend, who has masters in Civil Engineering, was also very impressed with JP and Clearview's construction techniques. Many people told us we were crazy to trust a contractor, but we could not be happier with our house.</p>
+				
+				<p>We had a very ambitious construction schedule as we were moving back from overseas and JP finished in just under 11 months. Our friends who have done similar construction jobs were shocked. And we came in at budget, again a shock.</p>
+				
+				<p>So the engineer in the family loves the house, but how does it look? At least once or twice a month we see strangers parked in front of the house to take pictures. A few have even knocked on our door to ask who built it."</p>
+				
+				<p>- Larry Thomas</p>
+				<p><a class="testimonial-link prev" href="woods.html">Previous</a></p>
+				<p><a class="testimonial-link next" href="ward.html">Next</a></p>
+				<i class="clearfix padbottom"></i>
+			</div>
+		</div>
+	</div>
+		<div id="footer">	
+			<ul class="nav">
+				<li><a href="../">Home</a></li>
+				<li><a>About Us</a></li>
+				<li><a href="../gallery/">Gallery</a></li>
+				<li><a href="../contact/">Contact Us</a></li>
+			</ul>
+			<div id="credit">Copyright &copy; Clear View Homes, LLC, All Rights Reserved. T: (571) 749-7320 | F: (866) 856-0803 | 210 Talahi Rd SE | Vienna, VA | 22180 </div>
+	</div>
+</div>
+
+<script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+<script>
+	$(function () {
+		$('#page').on('scroll', function () {
+			$sticky = $('#sticky-nav');
+			$nav = $('#nav');
+			if ($nav.position().top + $nav.outerHeight(true) < 0) {
+				$sticky.css({top:0});
+			} else {
+				$sticky.css({top:-100});
+			}
+		})
+
+	});
+</script>
+</body>
+</html>

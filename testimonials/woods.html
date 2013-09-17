@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clear View Homes, LLC.</title>
+<!-- 	<link href="http://localhost:3000/css/global.css" type="text/css" rel="stylesheet"/> -->
+	<link href="../css/global.css" type="text/css" rel="stylesheet"/>
+	<link href="../css/homepage.css" type="text/css" rel="stylesheet"/>
+	<link href="../css/font-awesome.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<div id="page">
+		<div id="logo">
+			<i class="placeholder">
+				<a href="../">
+					<img src="../images/logo.png"/>
+				</a>
+			</i>
+		</div>
+	<div id="nav">
+		<ul>
+			<li><a href="../">Home</a></li>
+			<li><a href="../about/">About Us</a></li>
+			<li><a href="../gallery/">Gallery</a></li>
+			<li><a href="../contact/">Contact Us</a></li>
+		</ul>
+	</div>
+	<div id="sticky-nav">
+		<ul>
+			<li><a href="../">Home</a></li>
+			<li><a href="../about/">About Us</a></li>
+			<li><a href="../gallery/">Gallery</a></li>
+			<li><a href="../contact/">Contact Us</a></li>
+		</ul>
+	</div>
+	<div id="content">
+		<div class="full text-left">
+			<div class="content-section">
+				<h1>Testimonials</h1>
+				<img style="background-image:url(http://www.vagblog.com/clearview/images/stock/006.jpg);"/>
+				<p>"If you are looking to build a custom home and have a positive experience while doing it we would highly recommend JP Sorrell at Clearview Homes!</p>
+
+				<p>We are extremely satisfied with our home and as importantly the process of building the home with Clearview Homes.  JP was very personable and responsive throughout the entire design and build process, balancing our design ideas with our stated budget constraints.  He understood the concepts we were trying to achieve for looks and functionality and skillfully pulled in the right elements to give us exactly the final product we were hoping to achieve!</p>
+
+				<p>JP's "hands-on" style made us feel like we were his most important customers while ensuring that we had the best contractors and professionals on site and keeping our project on schedule.  As with any custom home with unique character we were known to throw some "curveballs"  to JP for last minute changes or modifications we thought would make an improvement to the house and he handled these like a pro while balancing our schedule and budget objectives.</p>
+
+				<p>We found JP to be very honest, trustworthy and pleasant to work with and while we aren't planning to move any time soon, if we did we would certainly make our first call to Clearview Homes!"</p>
+
+				<p>- Doug &amp; Mary Woods</p>
+		
+				<p><a class="testimonial-link next" href="thomas.html">Next</a></p>
+				<i class="clearfix padbottom"></i>
+			</div>
+		</div>
+	</div>	
+	<div id="footer">	
+			<ul class="nav">
+				<li><a href="../">Home</a></li>
+				<li><a>About Us</a></li>
+				<li><a href="../gallery/">Gallery</a></li>
+				<li><a href="../contact/">Contact Us</a></li>
+			</ul>
+			<div id="credit">Copyright &copy; Clear View Homes, LLC, All Rights Reserved. T: (571) 749-7320 | F: (866) 856-0803 | 210 Talahi Rd SE | Vienna, VA | 22180 </div>
+	</div>
+</div>
+
+<script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+<script>
+	$(function () {
+		$('#page').on('scroll', function () {
+			$sticky = $('#sticky-nav');
+			$nav = $('#nav');
+			if ($nav.position().top + $nav.outerHeight(true) < 0) {
+				$sticky.css({top:0});
+			} else {
+				$sticky.css({top:-100});
+			}
+		})
+
+	});
+</script>
+</body>
+</html>

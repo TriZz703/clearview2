@@ -1,0 +1,116 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot');
+	src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('fonts/icomoon.svg#icomoon') format('svg'),
+		url('fonts/icomoon.woff') format('woff'),
+		url('fonts/icomoon.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.cd-dropdown span[class^="coicon-"]:before, 
+.cd-dropdown span[class*=" coicon-"]:before {
+	font-family: 'icomoon';
+	font-style: normal;
+	speak: none;
+	font-weight: normal;
+	position: absolute;
+	font-size: 40px;
+	line-height: 40px;
+	width: 50px;
+	top: 50%;
+	left: 15px;
+	margin-top: -20px;
+	text-align: center;
+}
+.coicon-monkey:before {
+	content: "\38";
+}
+.coicon-bear:before {
+	content: "\28";
+}
+.coicon-squirrel:before {
+	content: "\6f";
+}
+.coicon-elephant:before {
+	content: "\65";
+}
+.coicon-google-plus:before{
+	content: "\21";
+}
+.coicon-facebook:before {
+	content: "\22";
+}
+.coicon-twitter:before {
+	content: "\23";
+}
+.coicon-github:before {
+	content: "\24";
+}
+.coicon-tux:before {
+	content: "\25";
+}
+.coicon-apple:before {
+	content: "\26";
+}
+.coicon-android:before {
+	content: "\27";
+}
+.coicon-windows:before {
+	content: "\29";
+}
+.coicon-sun:before {
+	content: "\2a";
+}
+.coicon-cloudy:before {
+	content: "\2b";
+}
+.coicon-weather:before {
+	content: "\2c";
+}
+.coicon-lightning:before {
+	content: "\2d";
+}
+.coicon-rainy:before {
+	content: "\2e";
+}
+.coicon-windy:before {
+	content: "\2f";
+}
+.coicon-chrome:before {
+	content: "\30";
+}
+.coicon-firefox:before {
+	content: "\31";
+}
+.coicon-IE:before {
+	content: "\32";
+}
+.coicon-opera:before {
+	content: "\33";
+}
+.coicon-safari:before {
+	content: "\34";
+}
+.coicon-finder:before {
+	content: "\35";
+}
+.coicon-camera:before {
+	content: "\3a";
+}
+.coicon-diamond:before {
+	content: "\36";
+}
+.coicon-rocket:before {
+	content: "\37";
+}
+.coicon-cars:before {
+	content: "\39";
+}
+.coicon-clock:before {
+	content: "\3b";
+}
+.coicon-star:before {
+	content: "\3c";
+}

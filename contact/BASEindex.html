@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clear View Homes, LLC.</title>
+	<link href="../css/global.css" type="text/css" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="../css/default.css" />
+	<link rel="stylesheet" type="text/css" href="../css/component.css" />
+	<script src="../src/modernizr.custom.js"></script>
+
+</head>
+<body>
+
+	<div id="page">
+		
+		<div id="logo">
+			<i class="placeholder"></i>
+		</div>
+		<div id="nav">
+			<ul>
+				<li><a href="../">Home</a></li>
+				<li><a href="../about/">About Us</a></li>
+				<li><a href="../gallery/">Gallery</a></li>
+				<li class="active"><a>Contact Us</a></li>
+			</ul>
+		</div>
+		<div id="content">
+			<div class="full">
+				<h2>Send us a Message:</h2>
+				<form id="nl-form" class="nl-form">
+					I am interested in 
+					<select>
+						<option value="1" selected>any service for</option>
+						<option value="2">remodeling</option>
+						<option value="3">constructing</option>
+						<option value="4">adding on to</option>
+						<option value="2">renovating</option>
+					</select>
+					a home in 
+					<input type="text" value="" placeholder="any city" data-subline="For example: <em>Herndon</em> or <em>Great Falls</em>"/>.
+					Please contact me by 
+					<select>
+						<option value="1" selected>email</option>
+					 	<option value="1">phone</option>
+					 	<option value="2">SMS</option>
+					</select>
+					at <input type="text" value="" placeholder="my email" data-subline="For example: <em>john.smith@example.com</em> or <em>703-555-5555</em>"/>, sometime 
+					<select>
+						<option value="1" selected>during the day</option>
+					 	<option value="1">in the morning</option>
+					 	<option value="2">in the afternoon</option>
+					 	<option value="3">in the evening</option>
+					</select>.
+					<div class="nl-submit-wrap">
+						<button class="nl-submit" type="submit">Send message</button>
+					</div>
+					<div class="nl-overlay"></div>
+				</form>
+
+			</div>
+		</div>
+		<div id="footer">
+			<ul class="nav">
+				<li><a href="../">Home</a></li>
+				<li><a href="../about/">About Us</a></li>
+				<li><a href="../gallery/">Gallery</a></li>
+				<li><a>Contact Us</a></li>
+			</ul>
+			<div id="credit">Copyright &copy; Clear View Homes, LLC, All Rights Reserved.</div>
+		</div>
+	</div>
+		
+	</div>
+
+	<script src="//code.jquery.com/jquery-1.10.0.min.js"></script>
+	<script src="../src/nlform.js"></script>
+	<script>
+		var nlform = new NLForm( document.getElementById( 'nl-form' ) );
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clear View Homes, LLC.</title>
+<!-- 	<link href="http://localhost:3000/css/global.css" type="text/css" rel="stylesheet"/> -->
+	<link href="./css/global.css" type="text/css" rel="stylesheet"/>
+	<link href="./css/font-awesome.css" type="text/css" rel="stylesheet"/>
+</head>
+<body id="homepage">
+
+	<div id="page">
+		
+		<div id="logo">
+			<i class="placeholder">
+				<a href="./">
+					<img src="./images/logo.png"/>
+				</a>
+			</i>
+		</div>
+		<div id="nav">
+			<ul>
+				<li class="active"><a>Home</a></li>
+				<li><a href="./about/">About Us</a></li>
+				<li><a href="./gallery/">Gallery</a></li>
+				<li><a href="./contact/">Contact Us</a></li>
+			</ul>
+		</div>
+		<div id="sticky-nav">
+			<ul>
+				<li class="active"><a href="../">Home</a></li>
+				<li><a href="../about/">About Us</a></li>
+				<li><a href="../gallery/">Gallery</a></li>
+				<li><a href="../contact/">Contact Us</a></li>
+			</ul>
+		</div>
+
+		<div id="content">
+			<div class="full text-left">
+
+				<div class="content-section">
+					<img style="background-image:url(http://www.vagblog.com/clearview/images/stock/005.jpeg);"/>
+					<h1>The Clear Choice in Northern Virginia!</h1>
+					<p><strong>Clear View Homes, LLC</strong> is a Northern Virginia based custom home builder &amp; construction management company that specializes in turning clients' dreams into reality. As a custom home builder, <strong>Clear View Homes, LLC</strong> makes every effort to provide their clients with extraordinary quality and meticulous attention to detail.
+					</p>
+					
+					<p>
+					From the modest to the extravagant, the reserved to the exotic, and the minimal to the ornate...<strong>Clear View Homes, LLC</strong> has experience with all aspects and skillsets to building your home. <strong>Clear View Homes, LLC</strong> is also dedicated to high efficiency building and strives to use green building materials and alternative energies when possible.
+					</p>
+					<p>
+					The choice is clearly made with a home built by <strong>Clear View Homes, LLC.</strong>
+					</p>
+				</div>
+				<div class="content-section">
+					<h1>Testimonials</h1>
+					<img style="background-image:url(http://www.vagblog.com/clearview/images/stock/006.jpg);"/>
+						<p>"If you are looking to build a custom home and have a positive experience while doing it we would highly recommend JP Sorrell at Clearview Homes!..."</p>
+						<p><a class="readmore testimonial-link" href="./testimonials/woods.html">Read more...</a></p>
+				</div>
+				
+
+			</div>
+		</div>
+		<div id="footer">	
+			<ul class="nav">
+				<li><a href="../">Home</a></li>
+				<li><a>About Us</a></li>
+				<li><a href="../gallery/">Gallery</a></li>
+				<li><a href="../contact/">Contact Us</a></li>
+			</ul>
+			<div id="credit">Copyright &copy; Clear View Homes, LLC, All Rights Reserved. T: (571) 749-7320 | F: (866) 856-0803 | 210 Talahi Rd SE | Vienna, VA | 22180 </div>
+		</div>
+	</div>
+
+		
+	</div>
+
+<script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+<script>
+	$(function () {
+		$('#page').on('scroll', function () {
+			$sticky = $('#sticky-nav');
+			$nav = $('#nav');
+			if ($nav.position().top + $nav.outerHeight(true) < 0) {
+				$sticky.css({top:0});
+			} else {
+				$sticky.css({top:-100});
+			}
+		})
+
+	});
+</script>
+
+</body>
+</html>

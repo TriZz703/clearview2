@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clear View Homes, LLC.</title>
+<!-- 	<link href="http://localhost:3000/css/global.css" type="text/css" rel="stylesheet"/> -->
+	<link href="../css/global.css" type="text/css" rel="stylesheet"/>
+	<link href="../css/homepage.css" type="text/css" rel="stylesheet"/>
+	<link href="../css/font-awesome.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<div id="page">
+		<div id="logo">
+			<i class="placeholder">
+				<a href="../">
+					<img src="../images/logo.png"/>
+				</a>
+			</i>
+		</div>
+	<div id="nav">
+		<ul>
+			<li><a href="../">Home</a></li>
+			<li><a href="../about/">About Us</a></li>
+			<li><a href="../gallery/">Gallery</a></li>
+			<li><a href="../contact/">Contact Us</a></li>
+		</ul>
+	</div>
+	<div id="sticky-nav">
+		<ul>
+			<li><a href="../">Home</a></li>
+			<li><a href="../about/">About Us</a></li>
+			<li><a href="../gallery/">Gallery</a></li>
+			<li><a href="../contact/">Contact Us</a></li>
+		</ul>
+	</div>
+	<div id="content">
+		<div class="full text-left">
+			<div class="content-section">
+				<h1>Testimonials</h1>
+				<img style="background-image:url(http://www.vagblog.com/clearview/images/stock/006.jpg);"/>
+				<p>"In the fall of 2005, the opportunity to purchase a piece of property that met all of our geographic requirements (proximity to the town of Vienna, within the boundaries of the same schools) serendipitously occurred after years of investigating leads on properties. The first step after purchasing the property was finding a builder for our dream house. After many interviews with builders, we selected JP Sorrell to build our house. Why? He had a wealth of experience building houses. He had recently built custom homes that reflected some of our design choices. He had a strong relationship with an architect whose work we admired from our first review of his work. He was a local Vienna builder, resident and neighbor. But most compelling of all was JP's enthusiasm for wanting to build our house. That landed him the job.</p>
+		
+				<p>Following that, the design process proceeded and construction began the summer of 2006. This was a custom home, and we were aware up front that construction would require time. Even so, the smooth nature of decision making and modification surprised us. JP kept the process moving forward at all times. There were very few days in the one year it took from groundbreaking to move-in that construction sat idle. JP's attention to detail and his ability to find, motivate, and supervise quality subcontractors is one of JP's strongest qualities. No key feature that we required in our house was left off the plan. It was (and is) our dream house.</p>
+				
+				<p>Labor Day 2007, we moved into our house. Several friends who had custom built houses had warned us about the punch lists that go forgotten and to expect first year problems. JP continued to work with us on the punch list items, none of which were unexpected or critical for comfortable living. Never did first year (or second year) problems with any of the house systems that our friends warned us of materialize. From a maintenance perspective, we were looking at the replacement of light bulbs as being our number one item. All of the few items that could be called first-year warranty issues took a simple call to JP who had the sub on site and shortly thereafter had the problem solved.</p>
+				
+				<p>Our family has enjoyed the house we are calling "the last house we will live in" for two years now. We would change nothing. Any improvements are all considered cosmetic, such as adding built-ins and starting that basement wet bar, but those are secondary items in our plans.</p>
+				
+				<p>The strongest testimonial we can give is the answer to the question that friends ask us all the time, "Would you do this again, because we know so many people who say it was a nightmare and they would never do it again." Our response is, "In a heartbeat." Though in truth we will not need to because we built this house anticipating the various stages of our lives (including changing needs as we grow older), so this is the last house we will need to live in."</p>
+				
+				<p>- Walt Brady and Carol Ward</p>
+				<p><a class="testimonial-link prev" href="thomas.html">Previous</a></p>
+				<i class="clearfix padbottom"></i>
+			</div>
+		</div>
+	</div>	
+	<div id="footer">	
+			<ul class="nav">
+				<li><a href="../">Home</a></li>
+				<li><a>About Us</a></li>
+				<li><a href="../gallery/">Gallery</a></li>
+				<li><a href="../contact/">Contact Us</a></li>
+			</ul>
+			<div id="credit">Copyright &copy; Clear View Homes, LLC, All Rights Reserved. T: (571) 749-7320 | F: (866) 856-0803 | 210 Talahi Rd SE | Vienna, VA | 22180 </div>
+	</div>
+</div>
+
+<script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+<script>
+	$(function () {
+		$('#page').on('scroll', function () {
+			$sticky = $('#sticky-nav');
+			$nav = $('#nav');
+			if ($nav.position().top + $nav.outerHeight(true) < 0) {
+				$sticky.css({top:0});
+			} else {
+				$sticky.css({top:-100});
+			}
+		})
+
+	});
+</script>
+</body>
+</html>
